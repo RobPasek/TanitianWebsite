@@ -261,7 +261,7 @@ main {
 /* Plan Your Trip Page */
 .planning-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
   margin-top: 1.25rem;
 }
@@ -328,6 +328,51 @@ main {
 .faq-question {
   font-weight: 600;
   margin-bottom: 0.1rem;
+}
+
+/* Trip Planning Button */
+.trip-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.75rem 1.4rem;
+
+  background: var(--accent);
+  color: #ffffff;
+
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease,
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.trip-button:hover {
+  background: #0a6373;
+  border-color: #0a6373;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+.trip-button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.trip-button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
 }
 
 /* Forms (Contact page) */
