@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Visit Taniti – Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="js/popup.js"></script>
+  <link rel="stylesheet" href="style/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="shell">
+      <div class="header-inner">
+        <div class="brand">Visit Taniti</div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li><a href="amenities.html">Amenities</a></li>
+            <li><a href="transportation.html">Transportation</a></li>
+            <li><a href="lodging.html">Lodging &amp; Hotels</a></li>
+            <li><a href="entertainment.html">Entertainment</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="shell">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li aria-current="page">Contact</li>
+        </ol>
+      </nav>
+
+      <header class="page-header">
+        <div class="page-kicker">Get in Touch</div>
+        <h1 class="page-title">Contact Taniti Tourism</h1>
+        <p class="page-subtitle">
+          Have questions about visiting Taniti, planning your trip, or local services?
+          Send us a message and we’ll be happy to help.
+        </p>
+      </header>
+
+      <section class="layout">
+        <div>
+          <article class="card">
+            <h2>Contact Form</h2>
+            <form id="contactForm">
+              <p class="form-field">
+                <label for="name">Name</label><br />
+                <input id="name" name="name" type="text" />
+              </p>
+
+              <p class="form-field">
+                <label for="email">Email</label><br />
+                <input id="email" name="email" type="email" />
+              </p>
+
+              <p class="form-field">
+                <label for="topic">Topic</label><br />
+                <select id="topic" name="topic">
+                  <option>General question</option>
+                  <option>Travel planning</option>
+                  <option>Lodging & Hotels</option>
+                  <option>Activities & Entertainment</option>
+                  <option>Health & Safety</option>
+                </select>
+              </p>
+
+              <p class="form-field">
+                <label for="message">Message</label><br />
+                <textarea id="message" name="message" rows="5"></textarea>
+              </p>
+
+              <button id="submitBtn" class="button-primary" type="submit">
+                Send Message
+              </button>
+            </form>
+          </article>
+        </div>
+
+        <aside class="side-panel" aria-label="Contact notes">
+          <div class="card">
+            <h3>Emergency &amp; Medical</h3>
+            <p>
+              In case of an emergency while on Taniti, visitors can contact the local
+              authorities or go directly to the island’s hospital, which has multilingual
+              staff and several supporting clinics.
+            </p>
+            <p>
+              For non-urgent questions about power, currency, holidays, or safety, please
+              review the FAQ page first before reaching out.
+            </p>
+          </div>
+        </aside>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="shell">
+      <div class="footer-inner">
+        <span>&copy; 2025 Taniti Tourism Board – Prototype</span>
+        <ul>
+          <li><a href="faq.html">Visitor Info</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
